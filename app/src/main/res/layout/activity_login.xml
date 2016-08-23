@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentView"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center_horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/loginForm">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/loginForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/username"
+                style="@style/editTextView"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/login_email"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                app:met_floatingLabelText="@string/login_email" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/password"
+                style="@style/editTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:hint="******"
+                app:met_floatingLabelText="******" />
+
+
+            <TextView
+                style="@style/text.caption"
+                android:paddingRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Esqueci minha senha" />
+
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/enter"
+                style="@style/buttonRectangle"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="@string/enter" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_weight="43"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            style="@style/text.title"
+                            android:textStyle="bold"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="14"
+                            android:gravity="center"
+                            android:text="ou"
+                            android:textColor="@color/primary_text" />
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_weight="43"
+                            android:background="@color/colorPrimary" />
+
+
+                    </LinearLayout>
+
+                    <Button
+
+                        android:id="@+id/facebookRegisterButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/facebook_btt"
+                        android:drawableLeft="@drawable/socialfacebook"
+                        android:drawablePadding="-20dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:paddingLeft="20dp"
+                        android:text="@string/facebook_login"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+
+                    <Button
+                        android:id="@+id/googleRegisterButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/gplus_btt"
+                        android:drawableLeft="@drawable/socialgoogleplus"
+                        android:drawablePadding="-20dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:paddingLeft="20dp"
+                        android:text="@string/gmail_login"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <io.karim.MaterialTabs
+        android:id="@+id/materialTabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColor="#E0E0E0"
+        app:mtIndicatorColor="#ffffff"
+        android:background="?attr/colorPrimary"
+        app:mtTextColorSelected="#ffffff"
+        app:mtSameWeightTabs="true"
+        app:mtPaddingMiddle="false" />
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/materialTabs"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.gc.materialdesign.views.ButtonFloat
+        android:id="@+id/floatBtt"
+        style="@style/floatButtonLarge"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        materialdesign:animate="false"/>
+
+</RelativeLayout>

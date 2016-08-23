@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="editTextView" parent="@android:style/Widget.EditText">
+
+        <item name="android:textSize">@dimen/body2</item>
+        <item name="met_baseColor">@color/colorPrimary</item>
+        <item name="met_primaryColor">@color/colorPrimary</item>
+        <item name="met_errorColor">@color/red</item>
+        <item name="met_floatingLabel">normal</item>
+        <item name="met_underlineColor">@color/colorPrimary</item>
+        <item name="met_textColorHint">@color/divider</item>
+    </style>
+
+
+    <style name="buttonRectangle">
+        <item name="android:background">@color/colorAccent</item>
+
+    </style>
+
+    <style name="floatButtonLarge">
+        <item name="android:layout_marginBottom">@dimen/floatBttMargin</item>
+        <item name="android:layout_marginRight">@dimen/floatBttMargin</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/accent</item>
+
+    </style>
+
+    <style name="description">
+        <item name="android:textSize">@dimen/body2</item>
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textSize">@dimen/body1</item>
+        <item name="android:textColor">@color/primary_text</item>
+
+    </style>
+
+</resources>

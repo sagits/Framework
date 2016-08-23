@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rockapps.businessmanagement.activity.MenuActivity" >
+
+    <item android:id="@+id/search"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/background_button"
+        android:title="Pesquisa"
+        android:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        tools:ignore="AppCompatResource" />
+
+  <!--  <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" /> -->
+</menu>
+
+
+

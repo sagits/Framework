@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text">
+
+    </style>
+
+
+    <style name="text.display4">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/display4</item>
+    </style>
+
+    <style name="text.display3">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/display3</item>
+    </style>
+
+    <style name="text.display2">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/display2</item>
+    </style>
+
+    <style name="text.display1">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/display1</item>
+    </style>
+
+    <style name="text.headline">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/headline</item>
+    </style>
+
+    <style name="text.title">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/subheading</item>
+    </style>
+
+    <style name="text.subheading">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/display4</item>
+    </style>
+
+    <style name="text.body2">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/body2</item>
+    </style>
+
+    <style name="text.body1">
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:textSize">@dimen/body1</item>
+    </style>
+
+    <style name="text.caption">
+        <item name="android:textColor">@color/divider</item>
+        <item name="android:textSize">@dimen/caption</item>
+    </style>
+
+    <style name="text.button">
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:textSize">@dimen/button</item>
+    </style>
+    
+    
+</resources>

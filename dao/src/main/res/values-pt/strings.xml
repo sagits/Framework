@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="loading">Carregando</string>
+    <string name="loading_error">Houve um erro por favor tente novamente</string>
+    <string name="try_again">Tente novamente</string>
+    <string name="error_connection">Houve um erro por favor tente novamente</string>
+    <string name="cancel">Cancelar</string>
+</resources>

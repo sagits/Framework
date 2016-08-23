@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Framework</string>
+    <string name="login_email">User</string>
+    <string name="enter">Enter</string>
+    <string name="gmail_login">Entrar com o Google</string>
+    <string name="facebook_login">Entrar com o Facebook</string>
+    <string name="menu">Menu</string>
+    <string name="home_menu">Home</string>
+    <string name="terms">Termos de uso</string>
+    <string name="exit">Exit</string>
+    <string name="search">Search</string>
+    <string name="photos">Fotos</string>
+    <string name="posts">Postagens</string>
+</resources>

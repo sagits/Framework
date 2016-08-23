@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "atrativaweb.com.br.framework"
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    maven { url "http://jzaccone.github.io/SlidingMenu-aar" }
+    maven { url 'http://dl.bintray.com/amulyakhare/maven' }
+    maven { url "https://jitpack.io" }
+    maven { url "https://raw.github.com/pagseguro/android/mvn-repo/" }
+    maven { url "http://dl.bintray.com/jjhesk/maven" }
+    maven { url "https://repo.commonsware.com.s3.amazonaws.com" }
+    maven { url "http://dl.bintray.com/lukaville/maven" }
+    maven { url 'http://maven.livotovlabs.pro/content/groups/public' }
+    mavenCentral()
+    mavenLocal()
+    jcenter()
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+    compile project (path: ':dao')
+
+    compile('com.android.support:cardview-v7:21.0.+')
+    compile 'com.android.support:design:23.2.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.google.android.gms:play-services-plus:8.4.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.+'
+    compile 'com.google.android.gms:play-services-auth:8.4.0'
+    compile 'com.squareup:otto:1.3.8'
+    compile 'com.mikepenz:fontawesome-typeface:4.6.0.1@aar'
+
+
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile('com.github.nirhart:parallaxscroll:1.0')
+    compile 'com.mikhaellopez:circularimageview:3.0.2'
+
+    compile('com.github.ganfra:material-spinner:1.1.1') {
+        exclude group: 'com.nineoldandroids', module: 'library'
+    }
+
+    compile('com.weiwangcn.betterspinner:library-material:1.1.0') {
+        exclude group: 'com.rengwuxian.materialedittext', module: 'library'
+    }
+
+    compile('com.mikepenz:materialdrawer:5.2.0@aar') {
+        transitive = true
+        exclude group: 'com.android.support'
+    }
+
+    compile 'com.github.vajro:MaterialDesignLibrary:1.6'
+    compile 'io.karim:materialtabs:2.0.5'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'com.afollestad.material-dialogs:core:0.8.5.9'
+    compile 'com.baoyz.pullrefreshlayout:library:1.0.1'
+    compile 'com.squareup.picasso:picasso:+'
+}
